@@ -1,0 +1,96 @@
+$main-color: #F25030;
+
+.Header {
+    position: relative;
+
+    background-image: url(../public/img/main_theme.jpg);
+    background-position: center;
+    background-size: cover;
+
+    height: 700px;
+
+    // navbar_top
+    .navbar-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        height: 55px;
+        background-color: #fff;
+
+        a {
+            font-size: 1.3em;
+            text-decoration: none;
+
+            color: rgb(80, 108, 114);
+        }
+
+        .dropdown-menu a {
+            display: flex;
+            align-items: center;
+
+            color: black;
+
+            span {
+                color: black;
+            }
+        }
+
+
+        // bootstrap_settings
+        .dropdown-item:active {
+            background-color: $main-color;
+        }
+    }
+
+
+    // navbar-down
+    .navbar-down {
+        position: absolute;
+        bottom: -120px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+
+        height: 60px;
+        width: 100%;
+
+        background-color: #fce3df;
+
+        a {
+            display: flex;
+            align-items: center;
+
+            font-size: 1.4em;
+            text-decoration: none;
+
+            color: #002d33;
+
+            span{
+                font-size: 1.3em;
+                color: $main-color;
+            }
+        }
+        
+        .btn-navbar-down{
+
+            font-size: 1.4em;
+            color: white;
+   
+
+            border: none;
+            border-radius: 5px;
+            padding: 1px 5px;
+
+            background-color: $main-color;
+        }
+
+    }
+
+
+    .header-element {
+        background-image: url(../public/img/HeaderE_fries.png);
+    }
+}
