@@ -17,7 +17,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path='/fastfood' element={<Main data={Data.carousel} />} />
+          <Route path='/fastfood' element={<Main data={Data.content} />} />
         </Routes>
       </BrowserRouter>
     </div>

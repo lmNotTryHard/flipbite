@@ -1,12 +1,13 @@
 // mainColors
 $mainColor1: #073740;
+$mainColor2: #F25030;
 
 .main {
     margin-top: 180px;
 
 
-    // Cour
-    .carousel-slider{
+    // Carousel
+    .carousel-slider {
         position: relative;
         left: 180px;
 
@@ -26,7 +27,7 @@ $mainColor1: #073740;
     #demo.Carousel.slide {
         max-height: 300px;
         overflow: hidden;
-        
+
         margin-top: 25px;
     }
 
@@ -51,7 +52,7 @@ $mainColor1: #073740;
         }
 
         .post-content .post-title {
-            .post-name{
+            .post-name {
                 position: absolute;
                 left: 10px;
                 bottom: 15px;
@@ -64,14 +65,15 @@ $mainColor1: #073740;
 
                 font-weight: 600;
             }
-            .post-add-to_cart{
+
+            .post-add-to_cart {
                 display: flex;
                 align-items: center;
 
                 position: absolute;
                 right: 10px;
                 bottom: 15px;
-                
+
                 padding: 2px 3px;
 
                 background-color: #bf4026;
@@ -83,4 +85,60 @@ $mainColor1: #073740;
         }
     }
 
+    // Content
+    .categories {
+        margin-top: 50px;
+
+        .heading {
+            font-size: 3.5em;
+            background: -webkit-linear-gradient($mainColor2, rgb(60, 0, 0));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            text-align: center;
+        }
+
+        .categories_content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .cards {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                gap: 10px;
+
+                .card {
+                    position: relative;
+                    overflow: hidden;
+
+                    width: 400px;
+                    height: 350px;
+
+                    border-radius: 10px;
+
+                    img {
+                        height: 350px;
+                    }
+
+                    .card-content {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        border: 1px solid $mainColor1;
+
+                        height: 55px;
+
+                        font-size: 1.7em;
+                        color: $mainColor1;
+                        border-radius: 0 0 10px 10px;
+                    }
+
+                }
+            }
+        }
+    }
 }
