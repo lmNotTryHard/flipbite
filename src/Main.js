@@ -1,13 +1,13 @@
 import React from 'react'
 import './Main.scss'
 
-import FastFood from './pages/FastFood.js'
+import BreakFast from './pages/BreakFast.js'
 
 
 export default function Main(props) {
 
-  let fastfood = props.data.carousel_posts_Breakfast.map(f => {
-    return <FastFood post_url={f.post_url} post_name={f.post_name} />
+  let breakfast = props.data.carousel_posts_Breakfast.map(f => {
+    return <BreakFast post_url={f.post_url} post_name={f.post_name} />
   })
 
   return (
@@ -19,12 +19,12 @@ export default function Main(props) {
 
         <div class="carousel-inner">
           <div class="carousel-item active posts">
-            {fastfood}
+            {breakfast}
           </div>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item posts">
-            {fastfood}
+            {breakfast}
           </div>
         </div>
       </div>

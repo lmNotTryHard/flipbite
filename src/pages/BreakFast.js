@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function FastFood(props) {
+export default function BreakFast(props) {
 
   return (
     <div className='post'>
